@@ -1,0 +1,47 @@
+
+header{
+  text-align: center;
+}
+body {
+  font-family:fantasy;
+}
+
+.sprite img{
+  position:absolute;
+  z-index: 1;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:auto;
+}
+.container{
+  position:absolute;
+  z-index: 0;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:auto;
+  background-color: aqua;
+}
+
+.navbar{
+  z-index: 2;
+  position:absolute;
+  margin-top:52vw;
+  font-size: 3vw;
+}
+
+.individual-link{
+  padding:10vw;
+  color:rgb(241, 227, 219);
+}
+
+.button {
+  width: 20%;
+  height: auto;
+  font-size:24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color:rgb(106, 0, 0);
+}
