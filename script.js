@@ -1,18 +1,25 @@
 function toggleP(button) {
-    var portfolio = document.getElementById("portfolio");
+    //document.getElementById("theSprite").src = "images/Portfolio.png";
+    var home = document.getElementById("homeComplex");
+    var portfolio = document.getElementById("portComplex");
+    var about = document.getElementById("aboutComplex");
     if(button.id==="goHome")
     {
-        document.getElementById("theSprite").src = "images/Home.png";
         portfolio.style.display="none";
+        home.style.display="block";
+        about.style.display="none";
     }
     else if(button.id==="goPort")
     {
-        document.getElementById("theSprite").src = "images/Portfolio.png";
+
         portfolio.style.display="block";
+        home.style.display="none";
+        about.style.display="none";
     }
     else
     {
-        document.getElementById("theSprite").src = "images/AboutMe.png";
         portfolio.style.display="none";
+        home.style.display="none";
+        about.style.display="block";
     }
 }
