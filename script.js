@@ -23,3 +23,10 @@ function toggleP(button) {
         about.style.display="block";
     }
 }
+
+function start()
+{
+    var button = document.getElementById("homeComplex");
+    toggleP(button);
+}
+
