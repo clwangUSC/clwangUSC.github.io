@@ -1,4 +1,29 @@
+document.addEventListener('DOMContentLoaded',()=>{
+    const buttons = document.getElementById("goHome");
+    toggleP(buttons);
+
+    document.querySelectorAll(".individual-link").forEach(item=>{
+        item.addEventListener("mouseover",event=> {
+            item.style.color="yellow";
+        })
+        item.addEventListener("mouseout",event=> {
+            item.style.color='#F1E3DB';
+        })
+    })
+    // buttons.addEventListener("mouseover", e =>{
+    //     buttons.style.color="yellow";
+    // });
+
+    // buttons.addEventListener("mouseout", e =>{
+    //     buttons.style.color='#F1E3DB';
+    // });
+
+
+})
+
 function toggleP(button) {
+    console.log(button);
+  
     //document.getElementById("theSprite").src = "images/Portfolio.png";
     var home = document.getElementById("homeComplex");
     var portfolio = document.getElementById("portComplex");
