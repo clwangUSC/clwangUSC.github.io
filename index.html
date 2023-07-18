@@ -12,11 +12,11 @@
 <body>
   <img src="images/websiteTake21.png" class="container" ></img>
   <img src="images/table.png" class="table" ></img>
-
+  
   <nav class="navbar">
-    <a class ="individual-link" id="goHome" onclick="toggleP(this)">home</a>
-    <a class ="individual-link" id="goPort" onclick="toggleP(this)">portfolio</a>
-    <a class ="individual-link" id="goMe" onclick="toggleP(this)">about me</a>
+    <a class ="individual-link" id="goHome" onclick="toggleP(this)">Home</a>
+    <a class ="individual-link" id="goPort" onclick="toggleP(this)">Portfolio</a>
+    <a class ="individual-link" id="goMe" onclick="toggleP(this)">About Me</a>
   </nav>
 
   <div class="homeComplex" id="homeComplex">
@@ -38,29 +38,41 @@
         <img src="images/portfolio images/character design.png"></img>
         Second concept art image
         <img src="images/portfolio images/background concept.png"></img>
+        Spritesheet made for MFA project Card of Hearts
+        <img src="images/portfolio images/spritesheet.png"></img>
       </div>
     </div>
   </div>
 
   <div class="aboutComplex" id="aboutComplex">
     <div class="aboutText">
-      Hi, I'm wcfyrrtsyd, a college student.
+      Welcome to the magic tea shop!
       <br>
-      My dream is to be a concept artist for games.  
+      This is a little project meant to function as an art portfolio website.  
       <br>
-      My linkedin is *insert link here*
+      <!--a href="https://www.linkedin.cn/incareer/hp">Linkedin</a-->
+      Discord: syot
       <br>
-      You can also contact me through email at clwang@usc.edu or add me on discord as Syo#9200.  
+      Email: clwang@usc.edu
+      <!--a href="clwang@usc.edu">Email</a-->
       <br>
-      Thank you for visiting!
+      Many thanks for visiting!
     </div>
     <div class="sprite" >
       <img id="theSprite" src="images/webAboutMe1.png"></img>
     </div>  
   </div>
 
-  <footer>
-    &copy; 2023 CLWANG. All rights reserved.
-  </footer>
+  <div class="invisibleClickable">
+    <div class="lantern" onclick="clickedBackgroundObject()"></div>
+    <div class="cat" onclick="clickedBackgroundObject()"></div>
+    <div class="ingredients" onclick="clickedBackgroundObject()"></div>
+  </div>
+
+
 </body>
+
+<footer>
+  &copy; 2023 CLWANG. All rights reserved.
+</footer>
 </html>

@@ -3,10 +3,24 @@ header{
   text-align: center;
 }
 body {
-  font-family:fantasy;
+  margin-top: calc(50vh - 30vw);
+  margin-left:0;
+  height:60vw;
+  width:auto;
+  font-family:optima, sans-serif;
+  background-color: rgb(88, 9, 9);
+  overflow: hidden;
+}
+.objects{
+  right:0;
+  left:0;
+  top:0;
+  bottom:0;
+  margin: auto;
 }
 
 .aboutText{
+  line-height: 150%;
   display: flex;
   justify-content: center;
   text-align:center;
@@ -20,6 +34,10 @@ body {
   overflow:hidden;
   overflow-y:scroll;
   font-size: 20px;
+}
+
+.bottomAboutText{
+  z-index:4;
 }
 
 .portText{
@@ -59,6 +77,7 @@ body {
   width:100vw;
   height:auto;
   background-color: aqua;
+  
 }
 
 .navbar{
@@ -109,4 +128,24 @@ body {
 .portfolioItems img{
   width: 43vw;
   height: auto;
+}
+
+.invisibleClickable{
+  position: absolute;
+  z-index:5;
+  background: transparent;
+  border: none;
+  width: 10vw;
+  height: 10vw; 
+}
+
+.lantern{
+  position: inherit;
+  z-index:6;
+  background: inherit;
+  border: inherit;
+  margin-top: 12vw;
+  margin-left: 58vw;
+  width: inherit;
+  height: inherit;  
 }

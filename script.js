@@ -10,15 +10,6 @@ document.addEventListener('DOMContentLoaded',()=>{
             item.style.color='#F1E3DB';
         })
     })
-    // buttons.addEventListener("mouseover", e =>{
-    //     buttons.style.color="yellow";
-    // });
-
-    // buttons.addEventListener("mouseout", e =>{
-    //     buttons.style.color='#F1E3DB';
-    // });
-
-
 })
 
 function toggleP(button) {
@@ -55,3 +46,7 @@ function start()
     toggleP(button);
 }
 
+function clickedBackgroundObject()
+{
+    alert('object not yet interactable :(');
+}
