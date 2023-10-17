@@ -1,4 +1,19 @@
+var lights = 1;
+const frameImages = [
+    "",
+    "images/eyes2.png",
+    "images/eyes1.png",
+    "images/eyes0.png",
+    "images/eyes1.png",
+    "images/eyes2.png",
+];
+
+const frameRate = 25;
+const frameTimes=[80*frameRate,frameRate,frameRate,2*frameRate,frameRate]; 
+let currentFrameIndex = 0;
+
 document.addEventListener('DOMContentLoaded',()=>{
+    drawFrame();
     const buttons = document.getElementById("goHome");
     toggleP(buttons);
 
@@ -11,6 +26,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         })
     })
 })
+
 
 function toggleP(button) {
     console.log(button);
@@ -48,5 +64,28 @@ function start()
 
 function clickedBackgroundObject()
 {
-    alert('object not yet interactable :(');
+    //alert('object not yet interactable :(');
+    var background = document.getElementById("background");
+    if(lights == 1)
+    {
+        background.src = "images/background.png";
+        lights=0;
+    }
+    else
+    {
+        background.src = "images/lightson.png";
+        lights=1;
+    }
+
+}
+
+function drawFrame() 
+{
+    var eyes = document.getElementById("blink");
+
+    currentFrameIndex = (currentFrameIndex + 1) % frameImages.length;
+    eyes.src = frameImages[currentFrameIndex];
+
+
+    setTimeout(drawFrame, frameTimes[currentFrameIndex]);
 }

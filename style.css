@@ -140,12 +140,45 @@ body {
 }
 
 .lantern{
+  margin-top: 12vw;
+  margin-left: 58vw; 
   position: inherit;
   z-index:6;
   background: inherit;
   border: inherit;
-  margin-top: 12vw;
-  margin-left: 58vw;
   width: inherit;
   height: inherit;  
+}
+
+.lantern1{
+  margin-top: 16vw;
+  margin-left: 37vw; 
+  position: inherit;
+  z-index:6;
+  background: inherit;
+  border: inherit;
+  width: 7vw;
+  height: inherit;  
+}
+
+.lantern2{
+  margin-top: 21vw;
+  margin-left: 90vw; 
+  position: inherit;
+  z-index:6;
+  background: inherit;
+  border: inherit;
+  width: 7vw;
+  height: inherit;  
+}
+
+
+.blink
+{
+  position: absolute;
+  z-index:2;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:auto;
 }
