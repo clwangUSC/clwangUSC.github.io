@@ -22,6 +22,9 @@ body {
   bottom:0;
   margin: auto;
 }
+.Scroll{
+  background-color: rgb(255, 238, 198);
+}
 
 .aboutText{
   line-height: 150%;
@@ -188,6 +191,8 @@ body {
 }
 
 .Arthur_Images img{
+  margin-left: auto;
+  margin-right: auto;
   height: 600px;
   width: auto;
   overflow:hidden;
