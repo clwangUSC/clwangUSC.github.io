@@ -2,6 +2,9 @@
 header{
   text-align: center;
 }
+h1{
+  text-align: center;
+}
 body {
   margin-top: calc(50vh - 30vw);
   margin-left:0;
@@ -10,6 +13,7 @@ body {
   font-family:optima, sans-serif;
   background-color: rgb(88, 9, 9);
   overflow: hidden;
+  overflow-y:scroll;
 }
 .objects{
   right:0;
@@ -181,4 +185,11 @@ body {
   padding:0;
   width:100vw;
   height:auto;
+}
+
+.Arthur_Images img{
+  height: 600px;
+  width: auto;
+  overflow:hidden;
+  overflow-y:scroll;
 }
