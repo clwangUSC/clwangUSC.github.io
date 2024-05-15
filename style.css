@@ -23,6 +23,7 @@ body {
   margin: auto;
 }
 .Scroll{
+  text-align: center;
   background-color: rgb(255, 238, 198);
 }
 
@@ -191,8 +192,6 @@ body {
 }
 
 .Arthur_Images img{
-  margin-left: auto;
-  margin-right: auto;
   height: 600px;
   width: auto;
   overflow:hidden;
